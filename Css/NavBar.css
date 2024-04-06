@@ -1,0 +1,34 @@
+:root{
+    --color1: #231C07;
+    --color2: #F0A202;
+    --color3: #F18805;
+    --color4: #D95D39;
+    --color5: #202C59;
+}
+
+/* Contents */
+
+header{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 100vh;
+    background-color: var(--color3);
+    gap: 5vw;
+}
+
+header img{
+    width: 2.5vw;
+    height: auto;
+}
+
+header .box{
+    cursor: pointer;
+}
+
+header .box a:hover{
+    transition: background-color 0.3s ease;
+}

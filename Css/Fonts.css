@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+:root {
+    --color1: #231C07;
+    --color2: #F0A202;
+    --color3: #F18805;
+    --color4: #D95D39;
+    --color5: #202C59;
+}
+
+#Home h1 {
+    font-size: 50px;
+    color: var(--color1);
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Home h3 {
+    color: var(--color1);
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
