@@ -1,35 +1,9 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-:root{
-    --color1: #231C07;
-    --color2: #F0A202;
-    --color3: #F18805;
-    --color4: #D95D39;
-    --color5: #202C59;
-}
-
-/* Contents */
-
-body{
-    overflow-x: hidden;
-}
-
-
-
-section{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
+@import url(Default.css);
 
 section#Home{
-    background-color: var(--color5);
+    background-image: url(../Media/black-abstract-dark-2560x1440-9729.jpg);
+     background-size: clip;
+    background-repeat: no-repeat;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -50,7 +24,8 @@ section#Home .content#title{
     gap: 12px;
     width: 26vw;
     background-color: var(--color4);
-    padding: 12px;
+    padding: 24px;
+    border-radius: 24px;
 }
 
 section#Home .content .box{

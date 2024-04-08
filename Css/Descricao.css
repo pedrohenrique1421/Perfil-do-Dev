@@ -1,0 +1,60 @@
+@import url(Default.css);
+
+#Descricao{
+    display: flex;
+    flex-direction: column;
+    color: var(--colorN);
+}
+
+
+#Descricao .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#Descricao .content .box{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vh;
+}
+
+#Descricao .content .box#text{
+    width: 30vw;
+    gap: 12px;
+    background-color: var(--color5);
+    border-radius: 0 24px 24px 0;
+    color: var(--colorN);
+}
+
+#Descricao .content .box#perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color3);
+    border-radius: 24px 0 0 24px;
+}
+
+#Descricao .content .box img{
+    width: 200px;
+    height: auto;
+    border-radius: 100%;
+}
+
+#Descricao .flag{
+    position: absolute;
+    bottom: -98.5vh;
+    right: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+#Descricao .flag img{
+    width: auto;
+    height: 50px;
+}

@@ -1,10 +1,4 @@
-:root{
-    --color1: #231C07;
-    --color2: #F0A202;
-    --color3: #F18805;
-    --color4: #D95D39;
-    --color5: #202C59;
-}
+@import url(Default.css);
 
 /* Contents */
 

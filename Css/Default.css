@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color1: #231C07;
+    --color2: #F0A202;
+    --color3: #F18805;
+    --color4: #D95D39;
+    --color5: #202C59;
+    --colorN: #edfedf;
+}
+
+/* Contents */
+
+body{
+    overflow-x: hidden;
+    background-color: var(--color4);
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
