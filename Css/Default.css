@@ -4,11 +4,11 @@
 }
 
 :root{
-    --color1: #231C07;
-    --color2: #F0A202;
-    --color3: #F18805;
-    --color4: #D95D39;
-    --color5: #202C59;
+    --color1: #2f2f2f;
+    --color2: #6B9080;
+    --color3: #9993B2;
+    --color4: #b87548;
+    --color5: #FFF8F0;
     --colorN: #edfedf;
 }
 
@@ -25,6 +25,11 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    overflow: hidden;
 }
 
+.interSec{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--color1);
+}

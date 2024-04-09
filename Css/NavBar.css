@@ -10,8 +10,9 @@ header{
     justify-content: center;
     width: 5vw;
     height: 100vh;
-    background-color: var(--color3);
+    background-color: var(--color1);
     gap: 5vw;
+    z-index: 1000;
 }
 
 header img{

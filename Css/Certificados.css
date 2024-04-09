@@ -1,0 +1,17 @@
+@import url(Default.css);
+
+#Certificados{
+    align-items: flex-start;
+}
+
+#Certificados .header{
+    transform: rotate(180deg);
+    padding-bottom: 0px;
+    width: 100vw;
+    height: auto;
+    padding-right: 5vw;
+}
+
+#Certificados .header img{
+    transform: scaleX(1.01) translateY(5px);
+}
