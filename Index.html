@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="Css/Home.css">
     <link rel="stylesheet" href="Css/Descricao.css">
     <link rel="stylesheet" href="Css/Certificados.css">
-    <script src="JavaS/Script.js"></script>
+    <script src="JavaS/Script.js" defer></script>
 </head>
 
 <body>
-    <header>
+    <header id="NavBar">
         <div class="box">
             <a href="#Home">
                 <img src="Media/home_FILL0_wght400_GRAD0_opsz24.svg" alt="button">
@@ -34,6 +34,11 @@
         <div class="box">
             <a href="#">
                 <img src="Media/contacts_FILL0_wght400_GRAD0_opsz24.svg" alt="button">
+            </a>
+        </div>
+        <div class="box">
+            <a href="#Config">
+                <img src="Media/settings_FILL0_wght400_GRAD0_opsz24.svg" alt="">
             </a>
         </div>
     </header>
@@ -101,6 +106,10 @@
             <img src="Media/wave.svg" alt="Wave_Img">
         </div>
     </section>
+    <section id="Config">
+        <label for="render">Render timestamp</label>
+        <input type="range" name="render" id="range" min="100" max="1000" value="1000">
+        <h5 id="inputArea"></h5>
+    </section>
 </body>
-
 </html>
