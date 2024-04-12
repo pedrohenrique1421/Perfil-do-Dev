@@ -2,55 +2,44 @@
 
 :root{
     --varMargin: 5vw;
+    --varMargin2: 15vw;
 }
 
 #Certificados{
     align-items: center;
     justify-content: center;
+    background-color: var(--color1);
 }
 
-#Certificados .header{
-    transform: rotate(180deg);
-    padding-bottom: 0px;
-    width: 100vw;
-    height: auto;
-    padding-right: 5vw;
-    position: absolute;
-    bottom: -155vh;
-    z-index: -1;
-}
-
-#Certificados .header img{
-    transform: scaleX(1.01) translateY(5px);
-}
-
-#Certificados .content{
+#Certificados .contentCarrosel{
     display: flex;
     flex-direction: row;
-    gap: var(--varMargin);
     width: 100vw;
     height: 70vh;
     overflow-x: hidden;
     padding: 0 var(--varMargin);
+    
 }
 
-#Certificados .content .box{
-    display: flex;
-    flex-direction: row;
+#Certificados .contentCarrosel .slot{
     margin: auto;
-    width: 15vw;
+    width: auto;
     height: auto;
+    padding: 1vw;
+    background-color: var(--color1);
+    border: 2px solid #edfedf;
+    border-radius: 20px;
 }
 
-#Certificados .content .box:not(:last-child){
-    margin-right: var(--varMargin);
+#Certificados .contentCarrosel .slot:not(:last-child){
+    margin-right: var(--varMargin2);
 }
 
-#Certificados .content .box img{
+#Certificados .contentCarrosel .slot img{
     width: 18vw;
     height: auto;
 }
 
-#Certificados .content .box#first{
+#Certificados .contentCarrosel .slot#first{
     margin-left: 0;
 }

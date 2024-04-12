@@ -47,16 +47,35 @@ setInterval(() => {
 //Carrosel===============================
 
 const boxDeAcao = document.getElementById("first").style;
-const tempo = 5
-boxDeAcao.transition = String(tempo + "s linear")
-boxDeAcao.marginLeft = "-150vw"
 
+const classElements = document.getElementsByClassName("slot")
+
+setTimeout(()=>{
+    for(let i = 0; classElements.length > i; i++){
+        const elementoDaVez = window.getComputedStyle(classElements[i]);
+        console.log(elementoDaVez.marginLeft)
+        console.log(elementoDaVez.marginRight)
+    }
+}, 2000)
+
+
+
+
+const tempo = 20
+const distancia = String(150 * -1 + "vw")
+
+//#region
+boxDeAcao.transition = String(tempo + "s linear")
+boxDeAcao.marginLeft = distancia
 setInterval(()=>{
     boxDeAcao.transition = null
     boxDeAcao.marginLeft = null
+    console.log("Nulificado")
     setTimeout(()=>{
         boxDeAcao.transition = String(tempo + "s linear")
-        boxDeAcao.marginLeft = "-150vw"
+        boxDeAcao.marginLeft = distancia
+        console.log("Ativado")
     }, 10)
 
 }, (tempo * 1000))
+//#endregion
