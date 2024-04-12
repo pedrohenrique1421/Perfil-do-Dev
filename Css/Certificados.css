@@ -1,7 +1,12 @@
 @import url(Default.css);
 
+:root{
+    --varMargin: 5vw;
+}
+
 #Certificados{
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 #Certificados .header{
@@ -10,8 +15,42 @@
     width: 100vw;
     height: auto;
     padding-right: 5vw;
+    position: absolute;
+    bottom: -155vh;
+    z-index: -1;
 }
 
 #Certificados .header img{
     transform: scaleX(1.01) translateY(5px);
+}
+
+#Certificados .content{
+    display: flex;
+    flex-direction: row;
+    gap: var(--varMargin);
+    width: 100vw;
+    height: 70vh;
+    overflow-x: hidden;
+    padding: 0 var(--varMargin);
+}
+
+#Certificados .content .box{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 15vw;
+    height: auto;
+}
+
+#Certificados .content .box:not(:last-child){
+    margin-right: var(--varMargin);
+}
+
+#Certificados .content .box img{
+    width: 18vw;
+    height: auto;
+}
+
+#Certificados .content .box#first{
+    margin-left: 0;
 }
