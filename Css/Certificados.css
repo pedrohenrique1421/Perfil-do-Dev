@@ -1,27 +1,23 @@
 @import url(Default.css);
 
-:root{
+:root {
     --varMargin: 5vw;
     --varMargin2: 15vw;
 }
 
-#Certificados{
+#Certificados {
     align-items: center;
     justify-content: center;
     background-color: var(--color1);
 }
 
-#Certificados .contentCarrosel{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 70vh;
-    overflow-x: hidden;
-    padding: 0 var(--varMargin);
-    
+#Certificados .contentCarrosel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }
 
-#Certificados .contentCarrosel .slot{
+#Certificados .contentCarrosel .slot {
     margin: auto;
     width: auto;
     height: auto;
@@ -29,17 +25,36 @@
     background-color: var(--color1);
     border: 2px solid #edfedf;
     border-radius: 20px;
+    display: inline-block;
 }
 
-#Certificados .contentCarrosel .slot:not(:last-child){
+#Certificados .contentCarrosel .slot:not(:last-child) {
     margin-right: var(--varMargin2);
 }
 
-#Certificados .contentCarrosel .slot img{
+#Certificados .contentCarrosel .slot img {
     width: 18vw;
     height: auto;
 }
 
-#Certificados .contentCarrosel .slot#first{
+#Certificados .contentCarrosel .slot#first {
     margin-left: 0;
+}
+
+#Certificados .contentCarrosel .wrapperCarrossel {
+    display: inline-flex;
+    animation: carousel-animation 20s linear infinite;
+    flex-direction: row;
+    width: auto;
+    padding: 0 var(--varMargin);
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-67.8%);
+    }
 }

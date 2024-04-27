@@ -1,14 +1,19 @@
 @import url(Default.css);
 
-section#Home{
+section#Home {
     background-image: url(../Media/black-abstract-dark-2560x1440-9729.jpg);
-     background-size: clip;
+    background-size: clip;
     background-repeat: no-repeat;
     flex-direction: row;
     justify-content: space-between;
+    transition: 5s;
 }
 
-section#Home .wrapper{
+section#Home:hover {
+    cursor: none;
+}
+
+section#Home .wrapper {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -18,7 +23,7 @@ section#Home .wrapper{
     padding: 0 12vw;
 }
 
-section#Home .content#title{
+section#Home .content#title {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -28,32 +33,33 @@ section#Home .content#title{
     border-radius: 24px;
 }
 
-section#Home .content .box{
+section#Home .content .box {
     width: 100%;
 }
 
-section#Home .content#logo{
+section#Home .content#logo {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.content#logo .box img{
+.content#logo .box img {
     width: 34vw;
     height: auto;
 }
 
-.content#logo .box{
+.content#logo .box {
     animation: infinite 12s linear spin;
 }
 
 /* Keyframes */
 
-@keyframes spin{
-    0%{
+@keyframes spin {
+    0% {
         transform: rotate(0);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
