@@ -23,8 +23,49 @@ header img{
 
 header .box{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
 header .box a:hover{
     transition: background-color 0.3s ease;
+}
+
+header .box a::after{
+    content: "Home";
+    align-self: center;
+    position: absolute;
+    right: -130px;
+    background-color: var(--color3);
+    color: var(--color5);
+    font-size: 16px;
+    transition: 0.75s;
+    opacity: 0;
+    border-radius: 12px;
+    width: 150px;
+    padding: 12px;
+    text-align: right;
+    z-index: -100;
+}
+
+header .box a:hover::after{
+    opacity: 1;
+}
+
+header .box#descricao a::after{
+    content: "Descrição";
+}
+
+header .box#certificado a::after{
+    content: "Certificados";
+}
+
+header .box#contato a::after{
+    content: "Contato";
+}
+
+header .box#config a::after{
+    content: "Configurações";
 }
