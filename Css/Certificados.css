@@ -40,15 +40,45 @@
 #Certificados .contentCarrosel .slot#first {
     margin-left: 0;
 }
-
+/* Carrossel */
 #Certificados .contentCarrosel .wrapperCarrossel {
     display: inline-flex;
-    animation: carousel-animation 20s linear infinite;
+    animation: carousel-animation 40s linear infinite;
     flex-direction: row;
     width: auto;
     padding: 0 var(--varMargin);
 }
 
+#Certificados .blurWrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+}
+
+#Certificados .blurWrapper .circleBlur{
+    width: 60vh;
+    height: 60vh;
+    background-color: var(--color3);
+    border-radius: 100%;
+    filter: blur(100px);
+}
+
+#Certificados .blurWrapper .circleBlur#right{
+    transform: translateX(-8vw);
+    background: linear-gradient(270deg,transparent 0, #121212cc 50%);
+}
+
+#Certificados .blurWrapper .circleBlur#left{
+    transform: translateX(12vw);
+    background: linear-gradient(90deg,transparent 0, #121212cc 50%);
+}
+
+/* Carrossel animation */
 @keyframes carousel-animation {
     0% {
         transform: translateX(0);
