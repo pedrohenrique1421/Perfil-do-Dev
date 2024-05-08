@@ -2,7 +2,7 @@
 
 /* Contents */
 
-header{
+header {
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -16,12 +16,12 @@ header{
     transition: 1s;
 }
 
-header img{
+header img {
     width: 2.5vw;
     height: auto;
 }
 
-header .box{
+header .box {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -29,11 +29,18 @@ header .box{
     z-index: 1000;
 }
 
-header .box a:hover{
-    transition: background-color 0.3s ease;
+header .box a {
+    padding: 6px;
+    border-radius: 12px;
+    transition: 0.75s;
 }
 
-header .box a::after{
+header .box a:hover {
+    transition: background-color 0.3s ease;
+    background-color: var(--color3);
+}
+
+header .box a::after {
     content: "Home";
     align-self: center;
     position: absolute;
@@ -50,22 +57,35 @@ header .box a::after{
     z-index: -100;
 }
 
-header .box a:hover::after{
+header .box a:hover::after {
     opacity: 1;
+    animation: slideIn 2s ease-in-out;
 }
 
-header .box#descricao a::after{
+header .box#descricao a::after {
     content: "Descrição";
 }
 
-header .box#certificado a::after{
+header .box#certificado a::after {
     content: "Certificados";
 }
 
-header .box#contato a::after{
+header .box#contato a::after {
     content: "Contato";
 }
 
-header .box#config a::after{
+header .box#config a::after {
     content: "Configurações";
+}
+
+@keyframes slideIn {
+    0% {
+        color: transparent;
+        transform: scaleX(0%) translateX(-150px);
+    }
+
+    100% {
+        color: var(--color5);
+        transform: scaleX(100%) translateX(0);
+    }
 }

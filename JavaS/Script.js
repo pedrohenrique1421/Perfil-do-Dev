@@ -1,7 +1,7 @@
 function copyToClipBoard() {
     navigator.clipboard.writeText("phenriquelins1@Gmail.com").then(() => {
-        alert("Copiado para área de transferência.")
-    })
+        alert("Copiado para área de transferência.");
+    });
 }
 
 let posX = window.scrollX;
@@ -15,26 +15,28 @@ let mouseOn = false;
 const navbar = document.getElementById("NavBar");
 
 setInterval(() => {
-
-
     posX = window.scrollX;
     posY = window.scrollY;
 
-    if (posX !== posXRef | posY !== posYref) {
-        console.clear()
+    if ((posX !== posXRef) | (posY !== posYref)) {
+        console.clear();
         console.log("X: " + posX);
         console.log("Y: " + posY);
         posXRef = posX;
         posYref = posY;
     }
-    navbar.addEventListener("mouseover", () => {
+    navbar.addEventListener("mouseenter", () => {
         console.log("Mouse on");
         navbar.style.opacity = "1";
         mouseOn = true;
-        setTimeout(() => {
-            mouseOn = false;
-        }, 5000)
-    })
+    });
+    navbar.addEventListener("mouseleave", () => {
+        console.log("Mouse off");
+        if (posY == 0) {
+            navbar.style.opacity = "0";
+        }
+        mouseOn = false;
+    });
     if (posY == 0 && !mouseOn) {
         navbar.style.opacity = "0";
     } else {
