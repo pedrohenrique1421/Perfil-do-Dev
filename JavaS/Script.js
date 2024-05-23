@@ -46,4 +46,5 @@ setInterval(() => {
 const setElement = (element) =>{
     console.log(element)
     localStorage.setItem("elementForDescription", element);
+    localStorage.setItem("from", "certificados");
 }
