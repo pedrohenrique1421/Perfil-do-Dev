@@ -11,7 +11,7 @@ header {
     width: 5vw;
     height: 100vh;
     background-color: var(--color1);
-    gap: 5vw;
+    gap: 2.5vw;
     z-index: 1000;
     transition: 1s;
 }
@@ -59,7 +59,7 @@ header .box a::after {
 
 header .box a:hover::after {
     opacity: 1;
-    animation: slideIn 2s ease-in-out;
+    animation: slideIn 1s ease-in-out;
 }
 
 header .box#descricao a::after {
@@ -76,6 +76,10 @@ header .box#contato a::after {
 
 header .box#config a::after {
     content: "Configurações";
+}
+
+header .box#projetos a::after {
+    content: "Projetos";
 }
 
 @keyframes slideIn {

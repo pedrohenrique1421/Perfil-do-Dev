@@ -26,12 +26,10 @@ setInterval(() => {
         posYref = posY;
     }
     navbar.addEventListener("mouseenter", () => {
-        console.log("Mouse on");
         navbar.style.opacity = "1";
         mouseOn = true;
     });
     navbar.addEventListener("mouseleave", () => {
-        console.log("Mouse off");
         if (posY == 0) {
             navbar.style.opacity = "0";
         }
@@ -43,3 +41,9 @@ setInterval(() => {
         navbar.style.opacity = "1";
     }
 }, 800);
+
+
+const setElement = (element) =>{
+    console.log(element)
+    localStorage.setItem("elementForDescription", element);
+}
