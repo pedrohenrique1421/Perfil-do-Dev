@@ -1,0 +1,53 @@
+@import url('Default.css');
+
+#Trabalhos .infos{
+    width: 30vw;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: var(--color3);
+    padding: 24px;
+    justify-content: center;
+}
+
+#Trabalhos .local{
+    width: 30vw;
+    height: 10%;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: var(--color3);
+    padding: 24px;
+    color: var(--color6);
+    justify-content: center;
+
+}
+
+#Trabalhos .infos h6{
+    font-size: 24px;
+    color: var(--color6);
+}
+
+#Trabalhos .content{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+    background-color: var(--color1);
+    padding: 24px;
+    border-radius: 24px;
+}
+
+#Trabalhos .box{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color7);
+}
