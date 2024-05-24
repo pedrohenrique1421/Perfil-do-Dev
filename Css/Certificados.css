@@ -96,4 +96,8 @@
         width: 80vw;
         height: auto;
     }
+
+    #Certificados .contentCarrosel .slot{
+        padding: 5vw;
+    }
 }
