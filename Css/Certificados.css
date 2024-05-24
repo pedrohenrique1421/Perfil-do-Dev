@@ -90,3 +90,10 @@
         transform: translateX(-79.4%);
     }
 }
+
+@media (max-width: 450px) {
+    #Certificados .contentCarrosel .slot img {
+        width: 80vw;
+        height: auto;
+    }
+}

@@ -63,3 +63,32 @@ section#Home .content#logo {
         transform: rotate(360deg);
     }
 }
+
+@media (max-width: 450px) {
+    section#Home .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 12vh;
+        padding: 0;
+    }
+
+    .content#logo .box img {
+        width: 70vw;
+        height: auto;
+    }
+
+    section#Home .content#title {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 80vw;
+    }
+
+    section#Home .content#title h1 {
+        font-size: 60px;
+    }
+
+    section#Home .content#title h3 {
+        font-size: 35px;
+    }
+}

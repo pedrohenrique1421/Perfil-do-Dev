@@ -93,3 +93,12 @@ header .box#projetos a::after {
         transform: scaleX(100%) translateX(0);
     }
 }
+
+@media (max-width: 450px) {
+
+    header,
+    header .box {
+        width: 0px;
+        opacity: 0;
+    }
+}

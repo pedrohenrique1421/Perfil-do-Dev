@@ -75,3 +75,48 @@
 #Descricao footer img{
     transform: scaleX(1.01);
 }
+
+@media (max-width: 450px) {
+    #Descricao .content{
+        flex-direction: column;
+    }
+
+    #Descricao .content .box#perfil{
+        height: auto;
+        width: 90vw;
+        border-radius:  24px 24px 0 0;
+    }
+
+    #Descricao .content .box{
+        padding: 24px 0;
+        transform: translate(0);
+    }
+
+    #Descricao .content .box#text{
+        border-radius: 0 0 24px 24px ;
+        width: 90vw;
+    }
+
+    #Descricao .content .box#text p{
+        font-size: 16px;
+        width: 70vw;
+    }
+
+    #Descricao .flag{
+        bottom: -105vh;
+        width: 100vw;
+        padding: 0;
+        right: unset;
+        justify-content: space-around;
+        gap: 0;
+    }
+
+    #Descricao .flag img{
+        height: 10vw;
+    }
+
+    #Descricao footer {
+        padding: 0;
+        width: 98.8%;
+    }
+}
