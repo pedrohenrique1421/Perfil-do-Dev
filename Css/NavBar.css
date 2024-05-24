@@ -21,7 +21,7 @@ header img {
     height: auto;
 }
 
-header .box {
+header .boxNavBar {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -29,18 +29,18 @@ header .box {
     z-index: 1000;
 }
 
-header .box a {
+header .boxNavBar a {
     padding: 6px;
     border-radius: 12px;
     transition: 0.75s;
 }
 
-header .box a:hover {
+header .boxNavBar a:hover {
     transition: background-color 0.3s ease;
     background-color: var(--color3);
 }
 
-header .box a::after {
+header .boxNavBar a::after {
     content: "Home";
     align-self: center;
     position: absolute;
@@ -57,28 +57,28 @@ header .box a::after {
     z-index: -100;
 }
 
-header .box a:hover::after {
+header .boxNavBar a:hover:after {
     opacity: 1;
     animation: slideIn 1s ease-in-out;
 }
 
-header .box#descricao a::after {
+header .boxNavBar#descricao a::after {
     content: "Descrição";
 }
 
-header .box#certificado a::after {
+header .boxNavBar#certificado a::after {
     content: "Certificados";
 }
 
-header .box#contato a::after {
+header .boxNavBar#contato a::after {
     content: "Contato";
 }
 
-header .box#config a::after {
+header .boxNavBar#config a::after {
     content: "Configurações";
 }
 
-header .box#projetos a::after {
+header .boxNavBar#projetos a::after {
     content: "Projetos";
 }
 
@@ -97,8 +97,13 @@ header .box#projetos a::after {
 @media (max-width: 450px) {
 
     header,
-    header .box {
-        width: 0px;
-        opacity: 0;
+    header .boxNavBar,
+    header img {
+        width: 0;
     }
+
+    header{
+        pointer-events: none;
+    }
+
 }
