@@ -1,0 +1,91 @@
+@import url(Default.css);
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* 
+
+:root {
+    --color1: #2f2f2f;
+    --color2: #6B9080;
+    --color3: #3d3d3d;
+    --color4: #b87548;
+    --color5: #FFF8F0;
+    --color6: #eaebeb;
+    --color7: #6579d6;
+    --colorN: #edfedf;
+}
+
+*/
+
+#Trabalhos {
+    flex-direction: column;
+    gap: 2vw;
+    padding-left: 1.5vw;
+}
+
+#Trabalhos h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--colorN);
+    font-size: 80px;
+}
+
+#Trabalhos .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2vw;
+}
+
+#Trabalhos .container img {
+    width: 26vw;
+    height: auto;
+}
+
+#Trabalhos .box {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 24px 24px 0 0;
+    background-color: var(--color4);
+    padding: 3vw;
+    text-align: center;
+}
+
+#Trabalhos .box#principal {
+    height: 24vw;
+}
+
+#Trabalhos .box p,
+#Trabalhos .box a {
+    background-color: var(--color5);
+    color: var(--color1);
+    padding: 18px;
+    border-radius: 24px;
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#Trabalhos .box a {
+    font-size: 18px;
+    color: var(--color7);
+}
+
+#Trabalhos .box img {
+    width: 10vw;
+    height: auto;
+    padding: 24px;
+    border-radius: 24px;
+
+}
+
+#Trabalhos .content {
+    box-shadow: -10px -20px 40px #2f2f2faa;
+    border-radius: 24px;
+}

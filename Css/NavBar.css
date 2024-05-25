@@ -47,12 +47,12 @@ header .boxNavBar a::after {
     right: -130px;
     background-color: var(--color3);
     color: var(--color5);
-    font-size: 16px;
+    font-size: 14px;
     transition: 0.75s;
     opacity: 0;
     border-radius: 12px;
     width: 150px;
-    padding: 12px;
+    padding: 6px;
     text-align: right;
     z-index: -100;
 }
@@ -102,7 +102,7 @@ header .boxNavBar#projetos a::after {
         width: 0;
     }
 
-    header{
+    header {
         pointer-events: none;
     }
 
