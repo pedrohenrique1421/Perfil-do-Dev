@@ -52,11 +52,13 @@ setInterval(() => {
     }
 }, 800);
 
-const setElement = (element) => {
+const setElement = (element, from) => {
     console.log(element);
     localStorage.setItem("elementForDescription", element);
-    localStorage.setItem("from", "certificados");
+    localStorage.setItem("from", from);
 };
+
+
 
 const setNavBar = () => {
     const boxes = document.getElementsByClassName("boxNavBar");

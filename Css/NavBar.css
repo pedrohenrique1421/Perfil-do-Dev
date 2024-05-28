@@ -74,10 +74,6 @@ header .boxNavBar#contato a::after {
     content: "Contato";
 }
 
-header .boxNavBar#config a::after {
-    content: "Configurações";
-}
-
 header .boxNavBar#projetos a::after {
     content: "Projetos";
 }

@@ -20,6 +20,8 @@
     flex-direction: column;
     gap: 2vw;
     padding-left: 1.5vw;
+    border-radius: 24px;
+    height: 110vh;
 }
 
 #Trabalhos h1 {
@@ -49,11 +51,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
     border-radius: 24px 24px 0 0;
     background-color: var(--color4);
     padding: 3vw;
     text-align: center;
+    z-index: 10;
+}
+
+#Trabalhos .content:hover {
+    transform: scale(1.1);
 }
 
 #Trabalhos .box#principal {
@@ -67,6 +74,7 @@
     padding: 18px;
     border-radius: 24px;
     font-size: 16px;
+    font-weight: 700;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -74,18 +82,18 @@
 
 #Trabalhos .box a {
     font-size: 18px;
-    color: var(--color7);
+    color: var(--color8);
 }
 
 #Trabalhos .box img {
     width: 10vw;
     height: auto;
-    padding: 24px;
-    border-radius: 24px;
-
+    margin-bottom: 10px;
+    border-radius: 48px;
 }
 
 #Trabalhos .content {
     box-shadow: -10px -20px 40px #2f2f2faa;
     border-radius: 24px;
+    transition: 0.75s;
 }

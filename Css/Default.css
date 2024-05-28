@@ -11,6 +11,7 @@
     --color5: #FFF8F0;
     --color6: #eaebeb;
     --color7: #6579d6;
+    --color8: #1e39b4;
     --colorN: #edfedf;
 }
 
@@ -24,6 +25,7 @@ body {
 html {
     width: 100vw;
     overflow-x: hidden;
+
 }
 
 section {
@@ -39,6 +41,7 @@ section {
     width: 100vw;
     height: 10vh;
     background-color: var(--color1);
+    z-index: -1;
 }
 
 ::-webkit-scrollbar {
