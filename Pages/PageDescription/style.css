@@ -94,7 +94,11 @@ h6 {
     text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color7);
+}
+
+video {
+    margin-bottom: 12px;
 }

@@ -15,6 +15,8 @@ const equipe = document.getElementById("equipe");
 const ferramentas = document.getElementById("ferramentas");
 const finalidade = document.getElementById("finalidade");
 const divDeImagens = document.getElementById("images");
+const video = document.getElementById("video");
+const ilustrativo = document.getElementById("ilustrativo");
 
 if (elementSelected) {
   if (from == "certificados") {
@@ -34,6 +36,8 @@ if (elementSelected) {
         ferramentas.innerText =
           "Ferramentas: HTML, CSS, JavaScript, React Native, Firebase Firestore, Firebase Hosting, Firebase SDK";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "hackatonETEPD":
         title.innerText = "Certificado de participação";
@@ -49,6 +53,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: HTML, CSS, JavaScript, Figma";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "juventudeCode":
         title.innerText = "Certificado de participação";
@@ -65,6 +71,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: HTML, CSS, JavaScript, Figma";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "codeCombat":
         title.innerText = "Certificado de conclusão";
@@ -82,6 +90,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: Python";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "jsFuncoes":
         title.innerText = "Certificado de conclusão";
@@ -99,6 +109,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: JavaScript";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "logicaP":
         title.innerText = "Certificado de conclusão";
@@ -116,6 +128,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: JavaScript";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       //falta colocar o link do drive
       case "htmlCssAmbiente":
@@ -135,6 +149,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: HTML, CSS";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "htmlCssflexbox":
         title.innerText = "Certificado de conclusão";
@@ -153,6 +169,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: HTML, CSS";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "htmlCssVar":
         title.innerText = "Certificado de conclusão";
@@ -171,6 +189,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: HTML, CSS";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "lpLacos":
         title.innerText = "Certificado de conclusão";
@@ -189,6 +209,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: JavaScript";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "lpPong":
         title.innerText = "Certificado de conclusão";
@@ -207,6 +229,8 @@ if (elementSelected) {
         equipe.innerText = "";
         ferramentas.innerText = "Ferramentas: JavaScript";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       default:
         title.innerText = "Error 404";
@@ -219,6 +243,8 @@ if (elementSelected) {
         equipe.innerText = "Github: pedrohenrique1421";
         ferramentas.innerText = "Agradeço a consideração 🙂";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
     }
   }
@@ -237,6 +263,8 @@ if (elementSelected) {
         ferramentas.innerText =
           "Ferramentas: HTML, CSS, JavaScript, Firebase SDK, Firebase Firestore, React Native, Expo, Expo Application Services (EAS)";
         finalidade.innerText = "";
+        video.outerHTML = '';
+        ilustrativo.innerText = '';
         break;
       case "levantaAe":
         title.innerText = "LevantaAE";
@@ -249,7 +277,7 @@ if (elementSelected) {
         data.innerText = "Data de desenvolvimento: 01/10/2023 - 01/03/2024";
         ferramentas.innerText =
           "Ferramentas: HTML, CSS, JavaScript, Firebase SDK, Firebase Firestore, React Native, Expo, Expo Application Services (EAS)";
-        finalidade.innerText = "";
+
         break;
       default:
         title.innerText = "Error 404";
