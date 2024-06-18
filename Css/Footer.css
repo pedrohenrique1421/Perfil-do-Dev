@@ -4,7 +4,7 @@
 footer {
     padding: 2.5vw;
     padding-left: 5.5vw;
-    background-color: var(--color1);
+    background-color: var(--color3);
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -28,15 +28,10 @@ footer .infos h6 {
     color: var(--color6);
 }
 
-footer .container{
+footer .container {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-footer .btn img{
-    width: 72px;
-    height: auto;
 }

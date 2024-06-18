@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="Css/Footer.css">
     <link rel="shortcut icon" href="Media/favicon.png" type="image/x-icon">
     <script src="JavaS/Script.js" defer></script>
+    <script src="JavaS/dom.js" defer></script>
 </head>
 
 <body>
@@ -26,11 +27,6 @@
         <div class="boxNavBar" onmouseleave="clearNavBar()" id="home">
             <a href="#Home">
                 <img src="Media/home.svg" alt="button" class="imgNavBar">
-            </a>
-        </div>
-        <div class="boxNavBar" onmouseleave="clearNavBar()" id="descricao">
-            <a href="#Descricao">
-                <img src="Media/description.svg" alt="button" class="imgNavBar">
             </a>
         </div>
         <div class="boxNavBar" onmouseleave="clearNavBar()" id="certificado">
@@ -60,7 +56,8 @@
                     <h3>De Andrade Lins</h3>
                 </div>
                 <div class="box">
-                    <p>Um pequeno sonhador...</p>
+                    <p id="textprinc">Um pequeno sonhador...</p>
+                    <span id="cursor"></span>
                 </div>
             </div>
             <div class="content" id="logo">
@@ -72,6 +69,8 @@
     </section>
     <!-- Section -->
     <section id="Certificados">
+        <h1>Certificados</h1>
+        <h2>Certificados adquiridos ao longo da minha carreira</h2>
         <div class="contentCarrosel">
             <div class="wrapperCarrossel">
                 <div class="slot" id="first" onclick="setElement('codeCombat', 'certificados')">
@@ -153,6 +152,8 @@
     </section>
     <!-- Section -->
     <section id="Contato">
+        <h1>Contato</h1>
+        <h2>Entre em contato comigo pelas minhas redes sociais</h2>
         <div class="content">
             <div class="box">
                 <div class="infos">
@@ -166,7 +167,7 @@
                             redirecionado</a></h6>
                 </div>
                 <div class="local">
-                    <h1>Recife, Brazil</h1>
+                    <h3>Sempre disponivel das 08:00 às 20:00</h3>
                 </div>
             </div>
             <div class="mapouter">
@@ -183,6 +184,7 @@
     <!-- Section -->
     <section id="Trabalhos">
         <h1>Projetos</h1>
+        <h2>projetos realizados ao longo da minha carreira</h2>
         <div class="container">
             <div class="content">
                 <div class="box">
@@ -216,6 +218,7 @@
     </section>
     <footer>
         <h1>Pedro Henrique de Andrade Lins</h1>
+        <h2></h2>
         <div class="container">
             <div class="infos">
                 <h6>Discord: pption</h6>
@@ -225,9 +228,6 @@
                 <h6>Github: <a href="https://github.com/pedrohenrique1421">Clique para ser redirecionado</a></h6>
                 <h6>Linkedin: <a href="https://br.linkedin.com/in/pedro-lins-943a82275">Clique para ser
                         redirecionado</a></h6>
-            </div>
-            <div class="btn">
-                <img src="Media/arrow_up.svg" alt="arrowUp">
             </div>
         </div>
     </footer>

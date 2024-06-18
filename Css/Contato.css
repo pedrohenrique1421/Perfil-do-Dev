@@ -1,17 +1,48 @@
 @import url('Default.css');
 
-#Contato .infos{
+#Contato {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 5.5vw;
+    gap: 36px;
+    background-image: linear-gradient(to bottom, var(--color1), var(--color3), var(--color1));
+}
+
+#Contato h1 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--colorN);
+    font-size: 80px;
+}
+
+#Contato h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color5);
+    font-size: 40px;
+    margin-top: -36px;
+}
+
+#Contato h3 {
+    font-size: 24px;
+}
+
+#Contato .infos {
     width: 30vw;
     display: flex;
     gap: 24px;
     flex-direction: column;
     border-radius: 24px;
     background-color: var(--color3);
-    padding: 24px;
+    padding: 36px 24px;
     justify-content: center;
 }
 
-#Contato .local{
+#Contato .local {
     width: 30vw;
     height: 10%;
     display: flex;
@@ -25,12 +56,12 @@
 
 }
 
-#Contato .infos h6{
+#Contato .infos h6 {
     font-size: 24px;
     color: var(--color6);
 }
 
-#Contato .content{
+#Contato .content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -38,16 +69,18 @@
     background-color: var(--color1);
     padding: 24px;
     border-radius: 24px;
+    align-self: center;
 }
 
-#Contato .box{
+#Contato .box {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 500px;
     gap: 24px;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--color7);
 }
@@ -67,36 +100,37 @@ a{
     border-radius: 24px;
 }
 
-@media (max-width: 450px){
+@media (max-width: 450px) {
 
-    .mapouter, .gmap_canvas{
+    .mapouter,
+    .gmap_canvas {
         width: 70vw;
         height: 70vw;
     }
 
-    #Contato .content{
+    #Contato .content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    #Contato .content .box{
+    #Contato .content .box {
         height: fit-content;
     }
 
     #Contato .box .infos,
-    #Contato .box .local{
+    #Contato .box .local {
         width: 70vw;
     }
 
     #Contato .content .box h6,
-    #Contato .content .box h1{
+    #Contato .content .box h1 {
         font-size: 18px;
     }
 }
 
-@media (max-height: 750px){
-    #Contato .content{
+@media (max-height: 750px) {
+    #Contato .content {
         transform: scale(0.8);
     }
 }

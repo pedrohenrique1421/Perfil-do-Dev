@@ -23,7 +23,6 @@ setInterval(() => {
     posY = window.scrollY;
 
     if ((posX !== posXRef) | (posY !== posYref)) {
-        console.clear();
         console.log("X: " + posX);
         console.log("Y: " + posY);
         posXRef = posX;

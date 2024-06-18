@@ -22,6 +22,11 @@
     padding-left: 1.5vw;
     border-radius: 24px;
     height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 5.5vw;
+    background-color: var(--color1);
 }
 
 #Trabalhos h1 {
@@ -32,11 +37,22 @@
     font-size: 80px;
 }
 
+#Trabalhos h2 {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color5);
+    font-size: 40px;
+    margin-top: -36px;
+}
+
 #Trabalhos .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2vw;
+    align-self: center;
+    transform: translateX(-5.5vw);
 }
 
 #Trabalhos .container img {
@@ -96,4 +112,5 @@
     box-shadow: -10px -20px 40px #2f2f2faa;
     border-radius: 24px;
     transition: 0.75s;
+    background-image: linear-gradient(to bottom, var(--color4) 74%, transparent 75%);
 }
