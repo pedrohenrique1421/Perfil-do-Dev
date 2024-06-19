@@ -20,6 +20,7 @@
     font-style: normal;
     color: var(--colorN);
     font-size: 80px;
+    z-index: 1000;
     margin-left: 5.5vw;
 }
 
@@ -29,6 +30,7 @@
     font-style: normal;
     color: var(--color5);
     font-size: 40px;
+    z-index: 1000;
     margin-left: 5.5vw;
     margin-top: -36px;
 }
@@ -44,8 +46,8 @@
     width: auto;
     height: auto;
     padding: 1vw;
-    background-color: var(--color1);
-    border: 2px solid #edfedf;
+    background-color: var(--color3);
+    border: 2px solid var(--color4);
     border-radius: 20px;
     display: inline-block;
 }
@@ -57,6 +59,7 @@
 #Certificados .contentCarrosel .slot img {
     width: 18vw;
     height: auto;
+    background-color: var(--color1);
 }
 
 #Certificados .contentCarrosel .slot#first {
@@ -78,28 +81,27 @@
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    align-items: center;
     flex-direction: row;
     position: absolute;
     pointer-events: none;
 }
 
 #Certificados .blurWrapper .circleBlur {
-    width: 60vh;
-    height: 60vh;
+    width: 70vh;
+    height: 100vh;
     background-color: var(--color3);
     border-radius: 100%;
     filter: blur(100px);
 }
 
 #Certificados .blurWrapper .circleBlur#right {
-    transform: translateX(-8vw);
-    background: linear-gradient(270deg, transparent 0, #121212cc 50%);
+    transform: translateX(-10vw);
+    background: linear-gradient(270deg, var(--color1) 0, var(--color1) 50%);
 }
 
 #Certificados .blurWrapper .circleBlur#left {
     transform: translateX(12vw);
-    background: linear-gradient(90deg, transparent 0, #121212cc 50%);
+    background: linear-gradient(90deg, var(--color1) 0, var(--color1) 50%);
 }
 
 /* Carrossel animation */

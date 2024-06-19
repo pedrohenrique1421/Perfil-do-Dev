@@ -8,7 +8,7 @@ function sleep(ms) {
 }
 
 const mudarTexto = async (palavra) => {
-    let tempo = 300
+    let tempo = 250
     let texto = element.outerText
     let tamanho = texto.length
     let palavraTamanho = palavra.length
@@ -30,12 +30,24 @@ const mudarTexto = async (palavra) => {
     cursor.style.animation = "infinite alternate-reverse 0.5s piscar"
 }
 
-mudarTexto("aprendiz...").then(async () => {
-    await sleep(3000)
-    mudarTexto("pensador...").then(async () => {
-        await sleep(3000)
-        mudarTexto("atencioso...").then(async () => {
-            mudarTexto("sonhador...")
+const loopMudarTexto = async () => {
+    const awaitTime = 5000
+    mudarTexto("aprendiz...").then(async () => {
+        await sleep(awaitTime)
+        mudarTexto("pensador...").then(async () => {
+            await sleep(awaitTime)
+            mudarTexto("proativo...").then(async () => {
+                await sleep(awaitTime)
+                mudarTexto("sonhador...").then(async () => {
+                    await sleep(awaitTime)
+                    mudarTexto("apaixonado...").then(async () => {
+                        await sleep(awaitTime)
+                        loopMudarTexto()
+                    })
+                })
+            })
         })
     })
-})
+}
+
+loopMudarTexto()

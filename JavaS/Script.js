@@ -11,7 +11,6 @@ let posXRef = posX;
 let posYref = posY;
 
 let widthDaWindow = window.innerWidth;
-console.log(widthDaWindow);
 
 let mouseOn = false;
 
@@ -23,8 +22,6 @@ setInterval(() => {
     posY = window.scrollY;
 
     if ((posX !== posXRef) | (posY !== posYref)) {
-        console.log("X: " + posX);
-        console.log("Y: " + posY);
         posXRef = posX;
         posYref = posY;
     }
@@ -52,7 +49,6 @@ setInterval(() => {
 }, 800);
 
 const setElement = (element, from) => {
-    console.log(element);
     localStorage.setItem("elementForDescription", element);
     localStorage.setItem("from", from);
 };
@@ -67,14 +63,14 @@ const setNavBar = () => {
     header[0].style.width = "30vw";
     header[0].style.pointerEvents = "all"
 
-    for (let i = 0; i < boxes.length; ) {
+    for (let i = 0; i < boxes.length;) {
         const boxDaVez = boxes[i];
         boxDaVez.style.width = "30vw";
 
         i++;
     }
 
-    for (let a = 0; a < imgs.length; ) {
+    for (let a = 0; a < imgs.length;) {
         const boxDaVez = imgs[a];
         boxDaVez.style.width = "10vw";
 
@@ -91,14 +87,14 @@ const clearNavBar = () => {
         header[0].style.width = "0";
         header[0].style.pointerEvents = "none"
 
-        for (let i = 0; i < boxes.length; ) {
+        for (let i = 0; i < boxes.length;) {
             const boxDaVez = boxes[i];
             boxDaVez.style.width = "0";
 
             i++;
         }
 
-        for (let a = 0; a < imgs.length; ) {
+        for (let a = 0; a < imgs.length;) {
             const boxDaVez = imgs[a];
             boxDaVez.style.width = "0";
 

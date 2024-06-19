@@ -26,7 +26,7 @@
     justify-content: center;
     align-items: flex-start;
     padding-left: 5.5vw;
-    background-color: var(--color1);
+    background-color: var(--color8);
 }
 
 #Trabalhos h1 {
@@ -67,9 +67,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 24px;
     border-radius: 24px 24px 0 0;
-    background-color: var(--color4);
+    background-color: var(--color1);
     padding: 3vw;
     text-align: center;
     z-index: 10;
@@ -85,9 +85,9 @@
 
 #Trabalhos .box p,
 #Trabalhos .box a {
-    background-color: var(--color5);
-    color: var(--color1);
-    padding: 18px;
+    background-color: var(--color7);
+    color: var(--colorA);
+    padding: 24px;
     border-radius: 24px;
     font-size: 16px;
     font-weight: 700;
@@ -98,7 +98,7 @@
 
 #Trabalhos .box a {
     font-size: 18px;
-    color: var(--color8);
+    color: var(--colorB);
 }
 
 #Trabalhos .box img {
@@ -109,8 +109,7 @@
 }
 
 #Trabalhos .content {
-    box-shadow: -10px -20px 40px #2f2f2faa;
     border-radius: 24px;
     transition: 0.75s;
-    background-image: linear-gradient(to bottom, var(--color4) 74%, transparent 75%);
+    background-image: linear-gradient(to bottom, var(--color1) 74%, transparent 75%);
 }

@@ -16,7 +16,6 @@ const ferramentas = document.getElementById("ferramentas");
 const finalidade = document.getElementById("finalidade");
 const divDeImagens = document.getElementById("images");
 const video = document.getElementById("video");
-const ilustrativo = document.getElementById("ilustrativo");
 
 if (elementSelected) {
   if (from == "certificados") {
@@ -271,13 +270,13 @@ if (elementSelected) {
         subTitle.innerText = "Um projeto para uma Tese de Conclusão de Curso";
         logoImage.src = "../../Media/LevantaAE.svg";
         logoImage.style.width = "300px";
-        linkRepo.innerText = "Status: Em testes";
+        linkRepo.innerText = "Status: Em desenvolvimento";
         linkSite.outerHTML = "";
         linkSite.style.marginBottom = "0";
         data.innerText = "Data de desenvolvimento: 01/10/2023 - 01/03/2024";
         ferramentas.innerText =
           "Ferramentas: HTML, CSS, JavaScript, Firebase SDK, Firebase Firestore, React Native, Expo, Expo Application Services (EAS)";
-
+        finalidade.innerText = "Finalidade: Um aplicativo para Tese de Conclusão de Curso de uma Mestranda em Educação Física";
         break;
       default:
         title.innerText = "Error 404";

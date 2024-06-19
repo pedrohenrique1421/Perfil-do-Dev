@@ -37,7 +37,7 @@ header .boxNavBar a {
 
 header .boxNavBar a:hover {
     transition: background-color 0.3s ease;
-    background-color: var(--color3);
+    background-color: var(--color7);
 }
 
 header .boxNavBar a::after {
@@ -45,7 +45,7 @@ header .boxNavBar a::after {
     align-self: center;
     position: absolute;
     right: -130px;
-    background-color: var(--color3);
+    background-color: var(--color7);
     color: var(--color5);
     font-size: 14px;
     transition: 0.75s;

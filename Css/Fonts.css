@@ -3,23 +3,25 @@
 @import url(Default.css);
 
 
-#Home h1, #Home h2, #Home h3, #Home p{
+#Home h1,
+#Home h2,
+#Home h3,
+#Home p {
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: var(--color1);
+    color: var(--color5);
 }
 
 #Home h1 {
     font-size: 50px;
-    color: var(--color1);
+    color: var(--colorN);
 }
 
-#Home h3{
+#Home h3 {
     font-size: 30px;
 }
 
-#Home p{
+#Home p {
     font-size: 20px;
 }
-
