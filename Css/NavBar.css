@@ -71,7 +71,7 @@ header .boxNavBar#certificado a::after {
 }
 
 header .boxNavBar#contato a::after {
-    content: "Contato";
+    content: "Sobre mim";
 }
 
 header .boxNavBar#projetos a::after {

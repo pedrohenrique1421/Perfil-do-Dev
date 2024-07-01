@@ -1,0 +1,5 @@
+<FilesMatch "\.(php)$">
+    <Limit GET POST>
+        Require all granted
+    </Limit>
+</FilesMatch>

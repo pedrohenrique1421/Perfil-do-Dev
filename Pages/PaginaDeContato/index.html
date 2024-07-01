@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro Henrique - Mensagem rapida</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="shortcut icon" href="../../Media/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="backA">
+        <a href="../../Index.html">
+            <img src="../../Media/back_arrow.svg" alt="arrow back">
+        </a>
+    </div>
+    <h1>Mande<br>uma mensagem<br><span>Rápida</span> e <span>segura</span></h1>
+    <form action="config.php" method="post">
+        <div class="forms">
+
+            <div class="box">
+                <h3>Nome</h3>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome" required>
+            </div>
+            <div class="box">
+                <h3>Nome da empresa</h3>
+                <input type="text" name="empresa" id="empresa" placeholder="Insira o nome da sua instituição" required>
+            </div>
+            <div class="box">
+                <h3>Data e Hora</h3>
+                <input type="datetime-local" name="data" id="data" required>
+            </div>
+            <div class="box">
+                <h3>Mensagem</h3>
+                <textarea name="texto" id="texto" placeholder="Insira a sua mensagem" maxlength="1000"
+                    required></textarea>
+            </div>
+            <button class="btn1" type="submit" name="enviar" id="enviar">Enviar</button>
+        </div>
+    </form>
+</body>
+
+</html>

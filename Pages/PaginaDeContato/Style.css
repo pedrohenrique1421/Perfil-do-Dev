@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*:focus-visible {
+    outline: none;
+}
+
+body {
+    background-image: linear-gradient(to right, #a1a1a1, #FAFBFA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    gap: 10vw;
+    overflow-y: hidden;
+}
+
+.backA {
+    position: absolute;
+    left: 0;
+    top: 50vh;
+    width: 4vw;
+    cursor: pointer;
+}
+
+.backA img {
+    width: 4vw;
+    height: auto;
+}
+
+h2 {
+    font-size: 100px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #363636;
+    cursor: default;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #363636;
+    cursor: default;
+}
+
+h1::after {
+    content: "Esta função é para caso de erro na comunicação por outros meios";
+    position: absolute;
+    font-size: 18px;
+    top: 48%;
+    left: 38%;
+    padding: 24px;
+    background-color: #FAFBFA;
+    border: 1px solid #363636;
+    border-radius: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0;
+    transition: 1s;
+}
+
+h1:hover::after {
+    opacity: 1;
+
+}
+
+h3 {
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: 2px;
+}
+
+form {
+    padding: 2vw;
+    height: fit-content;
+    border-radius: 48px 6px 48px 6px;
+    border: #838383 2px solid;
+    background-color: #dadada;
+}
+
+.forms {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.box {
+    color: #525252;
+}
+
+input,
+textarea {
+    width: 20vw;
+    padding: 18px;
+    font-size: 16px;
+    background-color: #FAFBFA;
+    color: #525252;
+    font-weight: 40;
+}
+
+input {
+    border: none;
+    border-bottom: #363636 2px solid;
+    border-radius: 12px 0 0 0;
+    background-color: transparent;
+    padding: 6px 18px 2px 2px;
+}
+
+textarea {
+    width: 30vw;
+    height: 20vh;
+    resize: none;
+    border: none;
+    border-bottom: #363636 2px solid;
+    border-right: #363636 2px solid;
+    border-top: #a3a3a3 2px solid;
+    border-left: #a3a3a3 2px solid;
+    background-color: transparent;
+    border-radius: 12px 2px 12px 2px;
+}
+
+textarea:focus-visible {
+    border-bottom: #363636 2px solid;
+    border-right: #363636 2px solid;
+    border-top: #a3a3a3 2px solid;
+    border-left: #a3a3a3 2px solid;
+    outline: none;
+}
+
+.btn1 {
+    background-color: #525252;
+    width: 15vw;
+    padding: 24px;
+    border-radius: 24px 3px 24px 3px;
+    align-self: center;
+    font-size: 18px;
+    color: #FAFBFA;
+    border: none;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}

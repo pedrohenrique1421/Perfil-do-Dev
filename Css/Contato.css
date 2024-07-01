@@ -32,8 +32,15 @@
     font-size: 24px;
 }
 
+
+#Contato .infos h6 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
 #Contato .infos {
     width: 30vw;
+    height: 100%;
     display: flex;
     gap: 24px;
     flex-direction: column;
@@ -43,26 +50,15 @@
     justify-content: center;
 }
 
-#Contato .local {
-    width: 30vw;
-    height: 10%;
-    display: flex;
-    gap: 24px;
-    flex-direction: column;
-    border-radius: 24px;
-    background-color: var(--color7);
-    padding: 24px;
-    justify-content: center;
-}
-
-#Contato .infos h6 {
-    font-size: 24px;
+#Contato .infos p {
+    font-size: 18px;
 }
 
 #Contato .content {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
     background-color: var(--color1);
     padding: 24px;
